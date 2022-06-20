@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+/*    background-color: beige;*/
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+header{
+    background-color: #57571e;
+    height: 150px;
+}
+
+/*SECCIÓN NUESTROS SERVICIOS*/
+
+.ourservices{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e3e3e3;
+}
+.ourservices_title{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.ourservices_text{
+    text-align: center;
+    font-size: 0.8rem;
+    padding-bottom: 20px;
+}
+.ourservices_box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.ourservices_box > div{
+    margin: 15px;
+    width: 120px;
+    height: 100px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 0px rgba(110, 125, 188, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.ourservices i{
+    font-size: 2em;
+    padding: 10px;
+}
+.ourservices_box > div div{
+    font-size: 0.9em;
+}
+.ourservices_box > div:hover{
+    width: 140px;
+    height: 120px;
+    transition: 0.3s;
+    box-shadow: 0px 0px 5px 2px #1667b7;
+}
+
+/*SECCIÓN MI GALERÍA*/
+
+.ourgallery{
+/*    height: 450px;*/
+/*    background-color: aquamarine;*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+/*    display: flex;*/
+}
+.ourgallery_title{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.ourgallery_text{
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.ourgallery_box{
+    width: 70%;
+    margin: auto;
+    display: grid;
+/*    justify-content: center;*/
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto auto;
+/*    grid-gap: 1px;*/
+}
+.ourgallery_box > div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ourgallery_box > div img:hover{
+    cursor: pointer;
+}
+
+
+
+footer{
+    height: 150px;
+    background-color: chocolate;
+}
+@media (max-width:760px){
+    .ourgallery_box{
+        width: 80%;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
